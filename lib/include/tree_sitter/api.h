@@ -41,12 +41,12 @@ extern "C" {
 typedef uint16_t TSStateId;
 typedef uint16_t TSSymbol;
 typedef uint16_t TSFieldId;
-typedef struct TSLanguage TSLanguage;
-typedef struct TSParser TSParser;
-typedef struct TSTree TSTree;
-typedef struct TSQuery TSQuery;
-typedef struct TSQueryCursor TSQueryCursor;
-typedef struct TSLookaheadIterator TSLookaheadIterator;
+typedef struct TSLanguage __attribute__((visibility("default"))) TSLanguage;
+typedef struct TSParser __attribute__((visibility("default"))) TSParser;
+typedef struct TSTree __attribute__((visibility("default"))) TSTree;
+typedef struct TSQuery __attribute__((visibility("default"))) TSQuery;
+typedef struct TSQueryCursor __attribute__((visibility("default"))) TSQueryCursor;
+typedef struct TSLookaheadIterator __attribute__((visibility("default"))) TSLookaheadIterator;
 
 // This function signature reads one code point from the given string,
 // returning the number of bytes consumed. It should write the code point
